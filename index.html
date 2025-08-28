@@ -41,7 +41,7 @@
           <li
             class="flex gap-[10px] px-[20px] py-[12px] bg-[#ECFFF0] rounded-[50px]"
           >
-            <p>0</p>
+            <p id="heartCount" class="font-black font-[inter]">0</p>
             <img
               src="assets/heart.png"
               alt="heart-img"
@@ -51,7 +51,7 @@
           <li
             class="flex gap-[10px] px-[20px] py-[12px] bg-[#ECFFF0] rounded-[50px]"
           >
-            <p>100</p>
+            <p id="coinCount" class="font-black font-[inter]">100</p>
             <img
               src="assets/coin.png"
               alt="coin-img"
@@ -61,7 +61,7 @@
           <li
             class="flex gap-[10px] px-[20px] py-[12px] bg-[#00A63E] text-[white] rounded-[50px]"
           >
-            <p>0</p>
+            <p id="copyCount" class="font-black font-[inter]">0</p>
             <p>Copy</p>
           </li>
         </ul>
@@ -90,7 +90,7 @@
       <div class="grid grid-cols-3 gap-[30px] col-span-3">
         <!-- card 1 -->
         <div
-          class="bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
+          class="parent bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
         >
           <div class="flex justify-between items-center">
             <div
@@ -103,20 +103,20 @@
               />
             </div>
             <span>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart allHeart"></i>
             </span>
           </div>
           <div>
             <div>
-              <p class="font-bold text-[24px] mt-[16px]">
+              <p class="font-bold text-[24px] mt-[16px] name">
                 National Emergency Number
               </p>
-              <p class="font-[roboto] text-[18px] text-[#5C5C5C]">
+              <p class="font-[roboto] text-[18px] text-[#5C5C5C] title">
                 National Emergency
               </p>
             </div>
             <div class="my-[24px]">
-              <p class="font-[roboto] font-bold text-[32px]">999</p>
+              <p class="font-[roboto] font-bold text-[32px] number">999</p>
               <p
                 class="bg-[#F2F2F2] text-[#5C5C5C] px-[16px] py-[6px] rounded-3xl inline-block"
               >
@@ -125,13 +125,13 @@
             </div>
             <div class="flex gap-[8px]">
               <button
-                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5]"
+                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5] allCopy"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
                 id="card-1"
-                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white"
+                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white allCall"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -141,7 +141,7 @@
 
         <!-- card 2 -->
         <div
-          class="bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
+          class="parent bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
         >
           <div class="flex justify-between items-center">
             <div
@@ -154,18 +154,20 @@
               />
             </div>
             <span>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart allHeart"></i>
             </span>
           </div>
           <div>
             <div>
-              <p class="font-bold text-[24px] mt-[16px]">
+              <p class="font-bold text-[24px] mt-[16px] name">
                 Police Helpline <br />Number
               </p>
-              <p class="font-[roboto] text-[18px] text-[#5C5C5C]">Police</p>
+              <p class="font-[roboto] text-[18px] text-[#5C5C5C] title">
+                Police
+              </p>
             </div>
             <div class="my-[24px]">
-              <p class="font-[roboto] font-bold text-[32px]">999</p>
+              <p class="font-[roboto] font-bold text-[32px] number">999</p>
               <p
                 class="bg-[#F2F2F2] text-[#5C5C5C] px-[16px] py-[6px] rounded-3xl inline-block"
               >
@@ -174,12 +176,12 @@
             </div>
             <div class="flex gap-[8px]">
               <button
-                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5]"
+                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5] allCopy"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white"
+                class="call w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white allCall"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -189,7 +191,7 @@
 
         <!-- card 3 -->
         <div
-          class="bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
+          class="parent bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
         >
           <div class="flex justify-between items-center">
             <div
@@ -202,20 +204,20 @@
               />
             </div>
             <span>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart allHeart"></i>
             </span>
           </div>
           <div>
             <div>
-              <p class="font-bold text-[24px] mt-[16px]">
+              <p class="font-bold text-[24px] mt-[16px] name">
                 Fire Service <br />Number
               </p>
-              <p class="font-[roboto] text-[18px] text-[#5C5C5C]">
+              <p class="font-[roboto] text-[18px] text-[#5C5C5C] title">
                 Fire Service
               </p>
             </div>
             <div class="my-[24px]">
-              <p class="font-[roboto] font-bold text-[32px]">999</p>
+              <p class="font-[roboto] font-bold text-[32px] number">999</p>
               <p
                 class="bg-[#F2F2F2] text-[#5C5C5C] px-[16px] py-[6px] rounded-3xl inline-block"
               >
@@ -224,12 +226,12 @@
             </div>
             <div class="flex gap-[8px]">
               <button
-                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5]"
+                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5] allCopy"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white"
+                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white allCall"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -239,7 +241,7 @@
 
         <!-- card 4 -->
         <div
-          class="bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
+          class="parent bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
         >
           <div class="flex justify-between items-center">
             <div
@@ -252,19 +254,23 @@
               />
             </div>
             <span>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart allHeart"></i>
             </span>
           </div>
           <div>
             <div>
-              <p class="font-bold text-[24px] mt-[16px]">
+              <p class="font-bold text-[24px] mt-[16px] name">
                 Ambulance <br />
                 Service
               </p>
-              <p class="font-[roboto] text-[18px] text-[#5C5C5C]">Ambulance</p>
+              <p class="font-[roboto] text-[18px] text-[#5C5C5C] title">
+                Ambulance
+              </p>
             </div>
             <div class="my-[24px]">
-              <p class="font-[roboto] font-bold text-[32px]">1994-999999</p>
+              <p class="font-[roboto] font-bold text-[32px] number">
+                1994-999999
+              </p>
               <p
                 class="bg-[#F2F2F2] text-[#5C5C5C] px-[16px] py-[6px] rounded-3xl inline-block"
               >
@@ -273,12 +279,12 @@
             </div>
             <div class="flex gap-[8px]">
               <button
-                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5]"
+                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5] allCopy"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white"
+                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white allCall"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -288,7 +294,7 @@
 
         <!-- card 5 -->
         <div
-          class="bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
+          class="parent bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
         >
           <div class="flex justify-between items-center">
             <div
@@ -301,20 +307,20 @@
               />
             </div>
             <span>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart allHeart"></i>
             </span>
           </div>
           <div>
             <div>
-              <p class="font-bold text-[24px] mt-[16px]">
+              <p class="font-bold text-[24px] mt-[16px] name">
                 Women & Child <br />Helpline
               </p>
-              <p class="font-[roboto] text-[18px] text-[#5C5C5C]">
+              <p class="font-[roboto] text-[18px] text-[#5C5C5C] title">
                 Women & child Helpline
               </p>
             </div>
             <div class="my-[24px]">
-              <p class="font-[roboto] font-bold text-[32px]">109</p>
+              <p class="font-[roboto] font-bold text-[32px] number">109</p>
               <p
                 class="bg-[#F2F2F2] text-[#5C5C5C] px-[16px] py-[6px] rounded-3xl inline-block"
               >
@@ -323,12 +329,12 @@
             </div>
             <div class="flex gap-[8px]">
               <button
-                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5]"
+                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5] allCopy"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white"
+                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white allCall"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -338,7 +344,7 @@
 
         <!-- card 6 -->
         <div
-          class="bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
+          class="parent bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
         >
           <div class="flex justify-between items-center">
             <div
@@ -351,20 +357,20 @@
               />
             </div>
             <span>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart allHeart"></i>
             </span>
           </div>
           <div>
             <div>
-              <p class="font-bold text-[24px] mt-[16px]">
+              <p class="font-bold text-[24px] mt-[16px] name">
                 Anti-Corruption Helpline
               </p>
-              <p class="font-[roboto] text-[18px] text-[#5C5C5C]">
+              <p class="font-[roboto] text-[18px] text-[#5C5C5C] title">
                 Anti-Corruption
               </p>
             </div>
             <div class="my-[24px]">
-              <p class="font-[roboto] font-bold text-[32px]">106</p>
+              <p class="font-[roboto] font-bold text-[32px] number">106</p>
               <p
                 class="bg-[#F2F2F2] text-[#5C5C5C] px-[16px] py-[6px] rounded-3xl inline-block"
               >
@@ -373,12 +379,12 @@
             </div>
             <div class="flex gap-[8px]">
               <button
-                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5]"
+                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5] allCopy"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white"
+                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white allCall"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -388,7 +394,7 @@
 
         <!-- card 7 -->
         <div
-          class="bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
+          class="parent bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
         >
           <div class="flex justify-between items-center">
             <div
@@ -401,20 +407,20 @@
               />
             </div>
             <span>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart allHeart"></i>
             </span>
           </div>
           <div>
             <div>
-              <p class="font-bold text-[24px] mt-[16px]">
+              <p class="font-bold text-[24px] mt-[16px] name">
                 Electricity <br />Helpline
               </p>
-              <p class="font-[roboto] text-[18px] text-[#5C5C5C]">
+              <p class="font-[roboto] text-[18px] text-[#5C5C5C] title">
                 Electricity Outage
               </p>
             </div>
             <div class="my-[24px]">
-              <p class="font-[roboto] font-bold text-[32px]">16216</p>
+              <p class="font-[roboto] font-bold text-[32px] number">16216</p>
               <p
                 class="bg-[#F2F2F2] text-[#5C5C5C] px-[16px] py-[6px] rounded-3xl inline-block"
               >
@@ -423,12 +429,12 @@
             </div>
             <div class="flex gap-[8px]">
               <button
-                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5]"
+                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5] allCopy"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white"
+                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white allCall"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -438,7 +444,7 @@
 
         <!-- card 8 -->
         <div
-          class="bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
+          class="parent bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
         >
           <div class="flex justify-between items-center">
             <div
@@ -451,16 +457,18 @@
               />
             </div>
             <span>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart allHeart"></i>
             </span>
           </div>
           <div>
             <div>
-              <p class="font-bold text-[24px] mt-[16px]">Brac <br />Helpline</p>
-              <p class="font-[roboto] text-[18px] text-[#5C5C5C]">Brac</p>
+              <p class="font-bold text-[24px] mt-[16px] name">
+                Brac <br />Helpline
+              </p>
+              <p class="font-[roboto] text-[18px] text-[#5C5C5C] title">Brac</p>
             </div>
             <div class="my-[24px]">
-              <p class="font-[roboto] font-bold text-[32px]">16445</p>
+              <p class="font-[roboto] font-bold text-[32px] number">16445</p>
               <p
                 class="bg-[#F2F2F2] text-[#5C5C5C] px-[16px] py-[6px] rounded-3xl inline-block"
               >
@@ -469,12 +477,12 @@
             </div>
             <div class="flex gap-[8px]">
               <button
-                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5]"
+                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5] allCopy"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white"
+                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white allCall"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -484,7 +492,7 @@
 
         <!-- card 9 -->
         <div
-          class="bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
+          class="parent bg-[white] p-[32px] rounded-[12px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.15)]"
         >
           <div class="flex justify-between items-center">
             <div
@@ -497,20 +505,20 @@
               />
             </div>
             <span>
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart allHeart"></i>
             </span>
           </div>
           <div>
             <div>
-              <p class="font-bold text-[24px] mt-[16px]">
+              <p class="font-bold text-[24px] mt-[16px] name">
                 Bangladesh Railway Helpline
               </p>
-              <p class="font-[roboto] text-[18px] text-[#5C5C5C]">
+              <p class="font-[roboto] text-[18px] text-[#5C5C5C] title">
                 Bangladesh Railway
               </p>
             </div>
             <div class="my-[24px]">
-              <p class="font-[roboto] font-bold text-[32px]">163</p>
+              <p class="font-[roboto] font-bold text-[32px] number">163</p>
               <p
                 class="bg-[#F2F2F2] text-[#5C5C5C] px-[16px] py-[6px] rounded-3xl inline-block"
               >
@@ -519,12 +527,12 @@
             </div>
             <div class="flex gap-[8px]">
               <button
-                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5]"
+                class="w-full p-[16px] rounded-[8px] border border-[#D4D6D5] allCopy"
               >
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
               <button
-                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white"
+                class="w-full p-[16px] rounded-[8px] bg-[#00A63E] text-white allCall"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -533,7 +541,7 @@
         </div>
       </div>
 
-      <!-- sideBar -->
+      <!-- CallHistory -->
 
       <div class="bg-white p-[24px] rounded-xl">
         <div class="flex justify-between items-center mb-[16px]">
@@ -541,6 +549,7 @@
             <i class="fa-regular fa-clock"></i> Call History
           </p>
           <button
+            id="clearBtn"
             class="btn bg-[#00A63E] px-[20px] py-[12px] rounded-[50px] text-white font-[inter] font-semibold"
           >
             Clear
@@ -548,39 +557,11 @@
         </div>
 
         <!-- Call-History -->
-        <div class="flex flex-col gap-[8px]">
+        <div id="callHistory" class="flex flex-col gap-[8px]">
           
-          <div class="flex justify-between items-center bg-[#FAFAFA] p-[16px] rounded-lg font-[inter]">
-            <div>
-              <p class="font-[inter] font-semibold text-[18px]">fire Service Number</p>
-              <p class="text-[#5C5C5C] text-[18px]">999</p>
-            </div>
-            <p class="text-[18px]">10:24:33 AM</p>
-          </div>
-          <div class="flex justify-between items-center bg-[#FAFAFA] p-[16px] rounded-lg font-[inter]">
-            <div>
-              <p class="font-[inter] font-semibold text-[18px]">fire Service Number</p>
-              <p class="text-[#5C5C5C] text-[18px]">999</p>
-            </div>
-            <p class="text-[18px]">10:24:33 AM</p>
-          </div>
-          <div class="flex justify-between items-center bg-[#FAFAFA] p-[16px] rounded-lg font-[inter]">
-            <div>
-              <p class="font-[inter] font-semibold text-[18px]">fire Service Number</p>
-              <p class="text-[#5C5C5C] text-[18px]">999</p>
-            </div>
-            <p class="text-[18px]">10:24:33 AM</p>
-          </div>
-          <div class="flex justify-between items-center bg-[#FAFAFA] p-[16px] rounded-lg font-[inter]">
-            <div>
-              <p class="font-[inter] font-semibold text-[18px]">fire Service Number</p>
-              <p class="text-[#5C5C5C] text-[18px]">999</p>
-            </div>
-            <p class="text-[18px]">10:24:33 AM</p>
-          </div>
         </div>
-
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
