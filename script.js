@@ -16,7 +16,13 @@ let count2 = 0;
 const copyNumber = document.getElementById("copyCount");
 const copies = document.querySelectorAll(".allCopy");
 for (const copy of copies) {
-  copy.addEventListener("click", function () {
+  copy.addEventListener("click", function (e) {
+    const card = e.target.closest(".parent");
+    const number = card.querySelector(".number").innerText;
+
+    navigator.clipboard.writeText(`${number}`);
+    alert(`নম্বার কপি হয়েছে : ${number}`);
+
     count2++;
     copyNumber.innerText = count2;
   });
@@ -33,16 +39,14 @@ for (const call of calls) {
     const number = card.querySelector(".number").innerText;
     const name = card.querySelector(".name").innerText;
 
+    if (count3 < 20) {
+      alert("আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
+      return;
+    }
+
     alert(`Calling ${title} ${number}...`);
     count3 -= 20;
     callNumber.innerText = count3;
-
-    if (count3 < 0) {
-      alert("again");
-      const count4 = 0;
-      callNumber.innerText = count4;
-      div = "";
-    }
 
     const data = {
       historyName: `${name}`,
